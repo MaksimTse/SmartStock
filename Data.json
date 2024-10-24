@@ -1,0 +1,100 @@
+{
+    "region": [
+        {
+            "@attributes": {
+                "name": "Euroopa"
+            },
+            "country": [
+                {
+                    "@attributes": {
+                        "name": "Eesti"
+                    },
+                    "category": [
+                        {
+                            "@attributes": {
+                                "name": "Elektroonika"
+                            },
+                            "product": [
+                                {
+                                    "toodenimi": "Sülearvuti",
+                                    "id": "101",
+                                    "kogus": "15",
+                                    "arve": "INV001",
+                                    "tellija": "Ettevõte A",
+                                    "kuupäev": "2024-10-20",
+                                    "lisainfo": "2-aastane garantii"
+                                },
+                                {
+                                    "toodenimi": "Juhtmevaba hiir",
+                                    "id": "102",
+                                    "kogus": "50",
+                                    "arve": "INV002",
+                                    "tellija": "Ettevõte B",
+                                    "kuupäev": "2024-10-21",
+                                    "lisainfo": "Värv: must"
+                                }
+                            ]
+                        },
+                        {
+                            "@attributes": {
+                                "name": "Kontoritarbed"
+                            },
+                            "product": {
+                                "toodenimi": "Dokumendimapp",
+                                "id": "201",
+                                "kogus": "100",
+                                "arve": "INV003",
+                                "tellija": "Ettevõte C",
+                                "kuupäev": "2024-10-22",
+                                "lisainfo": "Värv: sinine"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@attributes": {
+                        "name": "Saksamaa"
+                    },
+                    "category": {
+                        "@attributes": {
+                            "name": "Kodumasinad"
+                        },
+                        "product": {
+                            "toodenimi": "Külmik",
+                            "id": "301",
+                            "kogus": "10",
+                            "arve": "INV004",
+                            "tellija": "Ettevõte D",
+                            "kuupäev": "2024-10-23",
+                            "lisainfo": "Energiaklass A+"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "name": "Põhja-Ameerika"
+            },
+            "country": {
+                "@attributes": {
+                    "name": "USA"
+                },
+                "category": {
+                    "@attributes": {
+                        "name": "Elektroonika"
+                    },
+                    "product": {
+                        "toodenimi": "Nutitelefon",
+                        "id": "401",
+                        "kogus": "200",
+                        "arve": "INV005",
+                        "tellija": "Ettevõte E",
+                        "kuupäev": "2024-10-24",
+                        "lisainfo": "Operatsioonisüsteem: Android"
+                    }
+                }
+            }
+        }
+    ]
+}

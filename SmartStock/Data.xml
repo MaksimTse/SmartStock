@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+	<region name="Euroopa">
+		<country name="Eesti">
+			<category name="Elektroonika">
+				<product>
+					<toodenimi>Sülearvuti</toodenimi>
+					<id>101</id>
+					<kogus>15</kogus>
+					<arve>INV001</arve>
+					<tellija>Ettevõte A</tellija>
+					<kuupaev>2024-10-20</kuupaev>
+					<lisainfo>2-aastane garantii</lisainfo>
+				</product>
+				<product>
+					<toodenimi>Juhtmevaba hiir</toodenimi>
+					<id>102</id>
+					<kogus>50</kogus>
+					<arve>INV002</arve>
+					<tellija>Ettevõte B</tellija>
+					<kuupaev>2024-10-21</kuupaev>
+					<lisainfo>Värv: must</lisainfo>
+				</product>
+			</category>
+			<category name="Kontoritarbed">
+				<product>
+					<toodenimi>Dokumendimapp</toodenimi>
+					<id>201</id>
+					<kogus>100</kogus>
+					<arve>INV003</arve>
+					<tellija>Ettevõte C</tellija>
+					<kuupaev>2024-10-22</kuupaev>
+					<lisainfo>Värv: sinine</lisainfo>
+				</product>
+			</category>
+		</country>
+		<country name="Saksamaa">
+			<category name="Kodumasinad">
+				<product>
+					<toodenimi>Külmik</toodenimi>
+					<id>301</id>
+					<kogus>10</kogus>
+					<arve>INV004</arve>
+					<tellija>Ettevõte D</tellija>
+					<kuupaev>2024-10-23</kuupaev>
+					<lisainfo>Energiaklass A+</lisainfo>
+			</product>
+			</category>
+		</country>
+	</region>
+	<region name="Põhja-Ameerika">
+		<country name="USA">
+			<category name="Elektroonika">
+				<product>
+					<toodenimi>Nutitelefon</toodenimi>
+					<id>401</id>
+					<kogus>200</kogus>
+					<arve>INV005</arve>
+					<tellija>Ettevõte E</tellija>
+					<kuupaev>2024-10-24</kuupaev>
+					<lisainfo>Operatsioonisüsteem: Android</lisainfo>
+				</product>
+			</category>
+		</country>
+	</region>
+</Data>
+
