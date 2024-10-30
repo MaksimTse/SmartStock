@@ -1,18 +1,18 @@
 {
-    "region": [
+    "warehouse": [
         {
             "@attributes": {
-                "name": "Euroopa"
+                "number": "001"
             },
-            "country": [
+            "category": [
                 {
                     "@attributes": {
-                        "name": "Eesti"
+                        "name": "Elektroonika"
                     },
-                    "category": [
+                    "country": [
                         {
                             "@attributes": {
-                                "name": "Elektroonika"
+                                "name": "Eesti"
                             },
                             "product": [
                                 {
@@ -21,7 +21,7 @@
                                     "kogus": "15",
                                     "arve": "INV001",
                                     "tellija": "Ettevõte A",
-                                    "kuupäev": "2024-10-20",
+                                    "kuupaev": "2024-10-20",
                                     "lisainfo": "2-aastane garantii"
                                 },
                                 {
@@ -30,43 +30,43 @@
                                     "kogus": "50",
                                     "arve": "INV002",
                                     "tellija": "Ettevõte B",
-                                    "kuupäev": "2024-10-21",
+                                    "kuupaev": "2024-10-21",
                                     "lisainfo": "Värv: must"
                                 }
                             ]
                         },
                         {
                             "@attributes": {
-                                "name": "Kontoritarbed"
+                                "name": "USA"
                             },
                             "product": {
-                                "toodenimi": "Dokumendimapp",
-                                "id": "201",
-                                "kogus": "100",
-                                "arve": "INV003",
-                                "tellija": "Ettevõte C",
-                                "kuupäev": "2024-10-22",
-                                "lisainfo": "Värv: sinine"
+                                "toodenimi": "Nutitelefon",
+                                "id": "401",
+                                "kogus": "200",
+                                "arve": "INV005",
+                                "tellija": "Ettevõte E",
+                                "kuupaev": "2024-10-24",
+                                "lisainfo": "Operatsioonisüsteem: Android"
                             }
                         }
                     ]
                 },
                 {
                     "@attributes": {
-                        "name": "Saksamaa"
+                        "name": "Kontoritarbed"
                     },
-                    "category": {
+                    "country": {
                         "@attributes": {
-                            "name": "Kodumasinad"
+                            "name": "Eesti"
                         },
                         "product": {
-                            "toodenimi": "Külmik",
-                            "id": "301",
-                            "kogus": "10",
-                            "arve": "INV004",
-                            "tellija": "Ettevõte D",
-                            "kuupäev": "2024-10-23",
-                            "lisainfo": "Energiaklass A+"
+                            "toodenimi": "Dokumendimapp",
+                            "id": "201",
+                            "kogus": "100",
+                            "arve": "INV003",
+                            "tellija": "Ettevõte C",
+                            "kuupaev": "2024-10-22",
+                            "lisainfo": "Värv: sinine"
                         }
                     }
                 }
@@ -74,24 +74,24 @@
         },
         {
             "@attributes": {
-                "name": "Põhja-Ameerika"
+                "number": "002"
             },
-            "country": {
+            "category": {
                 "@attributes": {
-                    "name": "USA"
+                    "name": "Kodumasinad"
                 },
-                "category": {
+                "country": {
                     "@attributes": {
-                        "name": "Elektroonika"
+                        "name": "Saksamaa"
                     },
                     "product": {
-                        "toodenimi": "Nutitelefon",
-                        "id": "401",
-                        "kogus": "200",
-                        "arve": "INV005",
-                        "tellija": "Ettevõte E",
-                        "kuupäev": "2024-10-24",
-                        "lisainfo": "Operatsioonisüsteem: Android"
+                        "toodenimi": "Külmik",
+                        "id": "301",
+                        "kogus": "10",
+                        "arve": "INV004",
+                        "tellija": "Ettevõte D",
+                        "kuupaev": "2024-10-23",
+                        "lisainfo": "Energiaklass A+"
                     }
                 }
             }

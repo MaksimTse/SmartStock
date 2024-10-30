@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Data>
-	<region name="Euroopa">
-		<country name="Eesti">
-			<category name="Elektroonika">
+	<warehouse number="001">
+		<category name="Elektroonika">
+			<country name="Eesti">
 				<product>
 					<toodenimi>Sülearvuti</toodenimi>
 					<id>101</id>
@@ -21,36 +21,8 @@
 					<kuupaev>2024-10-21</kuupaev>
 					<lisainfo>Värv: must</lisainfo>
 				</product>
-			</category>
-			<category name="Kontoritarbed">
-				<product>
-					<toodenimi>Dokumendimapp</toodenimi>
-					<id>201</id>
-					<kogus>100</kogus>
-					<arve>INV003</arve>
-					<tellija>Ettevõte C</tellija>
-					<kuupaev>2024-10-22</kuupaev>
-					<lisainfo>Värv: sinine</lisainfo>
-				</product>
-			</category>
-		</country>
-		<country name="Saksamaa">
-			<category name="Kodumasinad">
-				<product>
-					<toodenimi>Külmik</toodenimi>
-					<id>301</id>
-					<kogus>10</kogus>
-					<arve>INV004</arve>
-					<tellija>Ettevõte D</tellija>
-					<kuupaev>2024-10-23</kuupaev>
-					<lisainfo>Energiaklass A+</lisainfo>
-			</product>
-			</category>
-		</country>
-	</region>
-	<region name="Põhja-Ameerika">
-		<country name="USA">
-			<category name="Elektroonika">
+			</country>
+			<country name="USA">
 				<product>
 					<toodenimi>Nutitelefon</toodenimi>
 					<id>401</id>
@@ -60,8 +32,35 @@
 					<kuupaev>2024-10-24</kuupaev>
 					<lisainfo>Operatsioonisüsteem: Android</lisainfo>
 				</product>
-			</category>
-		</country>
-	</region>
+			</country>
+		</category>
+		<category name="Kontoritarbed">
+			<country name="Eesti">
+				<product>
+					<toodenimi>Dokumendimapp</toodenimi>
+					<id>201</id>
+					<kogus>100</kogus>
+					<arve>INV003</arve>
+					<tellija>Ettevõte C</tellija>
+					<kuupaev>2024-10-22</kuupaev>
+					<lisainfo>Värv: sinine</lisainfo>
+				</product>
+			</country>
+		</category>
+	</warehouse>
+	<warehouse number="002">
+		<category name="Kodumasinad">
+			<country name="Saksamaa">
+				<product>
+					<toodenimi>Külmik</toodenimi>
+					<id>301</id>
+					<kogus>10</kogus>
+					<arve>INV004</arve>
+					<tellija>Ettevõte D</tellija>
+					<kuupaev>2024-10-23</kuupaev>
+					<lisainfo>Energiaklass A+</lisainfo>
+				</product>
+			</country>
+		</category>
+	</warehouse>
 </Data>
-
