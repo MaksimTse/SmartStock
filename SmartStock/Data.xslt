@@ -12,13 +12,10 @@
                     <h1>Lao inventar</h1>
                     <table id="inventoryTable" data-order="asc">
                         <tr>
-                            <th>Lao number</th>
                             <th class="sortable" onclick="sortTable(0)">Kategooria</th>
                             <th class="sortable" onclick="sortTable(1)">Riik</th>
                             <th>Toode</th>
-                            <th>ID</th>
                             <th>Kogus</th>
-                            <th>Konto number</th>
                             <th>Klient</th>
                             <th>Kuupäev</th>
                             <th>Lisa teave</th>
@@ -29,9 +26,6 @@
                                     <xsl:for-each select="product">
                                         <tr>
                                             <td>
-                                                <xsl:value-of select="../../../@number"/>
-                                            </td>
-                                            <td>
                                                 <xsl:value-of select="../../@name"/>
                                             </td>
                                             <td>
@@ -41,13 +35,7 @@
                                                 <xsl:value-of select="toodenimi"/>
                                             </td>
                                             <td>
-                                                <xsl:value-of select="id"/>
-                                            </td>
-                                            <td>
                                                 <xsl:value-of select="kogus"/>
-                                            </td>
-                                            <td>
-                                                <xsl:value-of select="arve"/>
                                             </td>
                                             <td>
                                                 <xsl:value-of select="tellija"/>

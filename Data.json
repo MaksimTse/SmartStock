@@ -1,9 +1,6 @@
 {
     "warehouse": [
         {
-            "@attributes": {
-                "number": "001"
-            },
             "category": [
                 {
                     "@attributes": {
@@ -17,18 +14,14 @@
                             "product": [
                                 {
                                     "toodenimi": "Sülearvuti",
-                                    "id": "101",
                                     "kogus": "15",
-                                    "arve": "INV001",
                                     "tellija": "Ettevõte A",
                                     "kuupaev": "2024-10-20",
                                     "lisainfo": "2-aastane garantii"
                                 },
                                 {
                                     "toodenimi": "Juhtmevaba hiir",
-                                    "id": "102",
                                     "kogus": "50",
-                                    "arve": "INV002",
                                     "tellija": "Ettevõte B",
                                     "kuupaev": "2024-10-21",
                                     "lisainfo": "Värv: must"
@@ -41,9 +34,7 @@
                             },
                             "product": {
                                 "toodenimi": "Nutitelefon",
-                                "id": "401",
                                 "kogus": "200",
-                                "arve": "INV005",
                                 "tellija": "Ettevõte E",
                                 "kuupaev": "2024-10-24",
                                 "lisainfo": "Operatsioonisüsteem: Android"
@@ -61,40 +52,56 @@
                         },
                         "product": {
                             "toodenimi": "Dokumendimapp",
-                            "id": "201",
                             "kogus": "100",
-                            "arve": "INV003",
                             "tellija": "Ettevõte C",
                             "kuupaev": "2024-10-22",
                             "lisainfo": "Värv: sinine"
+                        }
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "Kodumasinad"
+                    },
+                    "country": {
+                        "@attributes": {
+                            "name": "Saksamaa"
+                        },
+                        "product": {
+                            "toodenimi": "Külmik",
+                            "kogus": "10",
+                            "tellija": "Ettevõte D",
+                            "kuupaev": "2024-10-23",
+                            "lisainfo": "Energiaklass A+"
                         }
                     }
                 }
             ]
         },
         {
-            "@attributes": {
-                "number": "002"
-            },
-            "category": {
-                "@attributes": {
-                    "name": "Kodumasinad"
-                },
-                "country": {
+            "category": [
+                {
                     "@attributes": {
-                        "name": "Saksamaa"
+                        "name": "Elektroonika"
                     },
-                    "product": {
-                        "toodenimi": "Külmik",
-                        "id": "301",
-                        "kogus": "10",
-                        "arve": "INV004",
-                        "tellija": "Ettevõte D",
-                        "kuupaev": "2024-10-23",
-                        "lisainfo": "Energiaklass A+"
-                    }
+                    "country": [
+                        {
+                            "@attributes": {
+                                "name": "USA"
+                            },
+                            "product": [
+                                {
+                                    "toodenimi": "IPad",
+                                    "kogus": "30",
+                                    "tellija": "Ettevõte A",
+                                    "kuupaev": "2024-11-27",
+                                    "lisainfo": "Värv: gold"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            }
+            ]
         }
     ]
 }
