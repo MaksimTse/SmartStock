@@ -1,43 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="Data">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="warehouse" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="category" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="country" maxOccurs="unbounded">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="product" maxOccurs="unbounded">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="toodenimi" type="xs:string" />
-                                                                <xs:element name="id" type="xs:integer" />
-                                                                <xs:element name="kogus" type="xs:integer" />
-                                                                <xs:element name="arve" type="xs:string" />
-                                                                <xs:element name="tellija" type="xs:string" />
-                                                                <xs:element name="kuupaev" type="xs:date" />
-                                                                <xs:element name="lisainfo" type="xs:string" minOccurs="0" />
-                                                            </xs:sequence>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                </xs:sequence>
-                                                <xs:attribute name="name" type="xs:string" use="required" />
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                    <xs:attribute name="name" type="xs:string" use="required" />
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                        <xs:attribute name="number" type="xs:string" use="required" />
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Data">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="warehouse">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="category">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="country">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element maxOccurs="unbounded" name="product">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="toodenimi" type="xs:string" />
+																<xs:element name="kogus" type="xs:unsignedByte" />
+																<xs:element name="tellija" type="xs:string" />
+																<xs:element name="kuupaev" type="xs:date" />
+																<xs:element name="lisainfo" type="xs:string" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="name" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="name" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>
