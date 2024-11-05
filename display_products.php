@@ -47,10 +47,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
     file_put_contents($jsonFilePath, json_encode($jsonData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     echo "<p>Toode on edukalt lisatud JSON-faili.</p>";
-    header("Location: $_SERVER[PHP_SELF]");
+    header("Location: display_products.php");
     exit;
 }
 
+// Load products from JSON
 $jsonFilePath = 'Data.json';
 $foundProducts = [];
 
@@ -88,6 +89,18 @@ if (file_exists($jsonFilePath)) {
         }
     }
 }
+
+// Handle search query
+$searchTerm = '';
+if (isset($_GET['search'])) {
+    $searchTerm = trim($_GET['search']);
+    if ($searchTerm !== '') {
+        // Filter found products based on the search term
+        $foundProducts = array_filter($foundProducts, function ($product) use ($searchTerm) {
+            return stripos($product['toodenimi'], $searchTerm) !== false;
+        });
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -99,6 +112,13 @@ if (file_exists($jsonFilePath)) {
 </head>
 <body>
 <h1>Lao tooted</h1>
+
+<!-- Search form -->
+<form method="get">
+    <label for="search">Otsi toode nime järgi:</label>
+    <input type="text" id="search" name="search" value="<?php echo htmlspecialchars($searchTerm); ?>">
+    <button type="submit">Otsi</button>
+</form>
 
 <div class="table-container">
     <table>
@@ -155,7 +175,7 @@ if (file_exists($jsonFilePath)) {
         </tr>
         <tr>
             <td><label for="kogus">Kogus:</label></td>
-            <td><input type="text" name="kogus" id="kogus" required></td>
+            <td><input type="number" name="kogus" id="kogus" required></td>
         </tr>
         <tr>
             <td><label for="tellija">Klient:</label></td>

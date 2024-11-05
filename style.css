@@ -26,7 +26,7 @@ label {
     color: #ffffff;
 }
 
-input[type="text"], input[type="date"], input[type="submit"], select  {
+input[type="text"], input[type="date"], input[type="submit"], input[type="number"], select  {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
