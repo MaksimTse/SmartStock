@@ -195,5 +195,6 @@ if (isset($_GET['search'])) {
     </table>
 </form>
 <p><a href="info.php" target="_blank">JSON fail</p>
+<p><a href="SmartStock/Data.xml" target="_blank">XML fail</p>
 </body>
 </html>
